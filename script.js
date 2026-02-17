@@ -94,7 +94,6 @@ showCategoryStats(){
         let catArray = this.expenses.filter(exp => exp.category == categories[i])
         total = 0
             for (i2=0; i2<catArray.length; i2++){
-                console.log(i2, catArray.length)
                 total += catArray[i2].amount
         console.log(`${catArray[i2].category}: ${total}`)
     }
@@ -103,4 +102,5 @@ showCategoryStats(){
 }
 
 let tracker = expenseTracker
+
 expenseTracker.selectAction()
