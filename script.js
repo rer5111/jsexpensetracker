@@ -96,7 +96,7 @@ showCategoryStats(){
             for (i2=0; i2<catArray.length; i2++){
                 total += catArray[i2].amount
             }
-        console.log(`${catArray[i2].category}: ${total}`)
+        console.log(`${catArray[0].category}: ${total}`)
     }
 }
 }
@@ -104,4 +104,5 @@ showCategoryStats(){
 let tracker = expenseTracker
 
 expenseTracker.selectAction()
+
 
